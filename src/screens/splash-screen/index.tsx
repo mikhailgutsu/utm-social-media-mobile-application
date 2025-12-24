@@ -35,7 +35,6 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ navigation }) => {
 
   return (
     <Background>
-      {/* @ts-ignore */}
       <View
         style={[
           styles.container,
@@ -47,9 +46,7 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ navigation }) => {
           },
         ]}
       >
-        {/* @ts-ignore */}
         <View style={styles.content}>
-          {/* @ts-ignore */}
           <Animated.View
             style={[
               styles.logoContainer,
@@ -58,7 +55,6 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ navigation }) => {
               },
             ]}
           >
-            {/* @ts-ignore */}
             <Image
               source={require('../../assets/png/utm-logo/logo.png')}
               style={styles.logo}

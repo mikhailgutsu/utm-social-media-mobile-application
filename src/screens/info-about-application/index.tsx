@@ -9,7 +9,6 @@ export const InfoAboutApplication: React.FC<InfoAboutApplicationProps> = () => {
 
   return (
     <Background>
-      {/* @ts-ignore */}
       <View
         style={[
           styles.container,
@@ -21,47 +20,32 @@ export const InfoAboutApplication: React.FC<InfoAboutApplicationProps> = () => {
           },
         ]}
       >
-        {/* @ts-ignore */}
         <ScrollView
           contentContainerStyle={styles.scrollContent}
           showsVerticalScrollIndicator={false}
         >
-          {/* @ts-ignore */}
           <View style={styles.header}>
-            {/* @ts-ignore */}
             <Text style={styles.title}>UTM Social Media</Text>
-            {/* @ts-ignore */}
             <Text style={styles.subtitle}>Mobile Application</Text>
           </View>
 
-          {/* @ts-ignore */}
           <View style={styles.section}>
-            {/* @ts-ignore */}
             <Text style={styles.sectionTitle}>About Us</Text>
-            {/* @ts-ignore */}
             <Text style={styles.sectionText}>
               Welcome to UTM Social Media - Your premier destination for
               connecting with the community and sharing your experiences.
             </Text>
           </View>
 
-          {/* @ts-ignore */}
           <View style={styles.section}>
-            {/* @ts-ignore */}
             <Text style={styles.sectionTitle}>Features</Text>
-            {/* @ts-ignore */}
             <Text style={styles.featureItem}>• Connect with friends</Text>
-            {/* @ts-ignore */}
             <Text style={styles.featureItem}>• Share your moments</Text>
-            {/* @ts-ignore */}
             <Text style={styles.featureItem}>• Discover new content</Text>
-            {/* @ts-ignore */}
             <Text style={styles.featureItem}>• Real-time notifications</Text>
           </View>
 
-          {/* @ts-ignore */}
           <View style={styles.footer}>
-            {/* @ts-ignore */}
             <Text style={styles.footerText}>Version 0.0.1</Text>
           </View>
         </ScrollView>

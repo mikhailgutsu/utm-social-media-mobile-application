@@ -1,11 +1,20 @@
 {
-  "extends": "@react-native/typescript-config",
   "compilerOptions": {
-    "types": ["jest"],
+    "strict": true,
+    "moduleResolution": "node",
     "jsx": "react-native",
+    "esModuleInterop": true,
     "skipLibCheck": true,
-    "noImplicitAny": false
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "@assets": ["src/assets"],
+      "@atoms": ["src/components/atoms"],
+      "@molecules": ["src/components/molecules"],
+      "@organisms": ["src/components/organisms"],
+      "@navigation/*": ["src/navigation/*"],
+      "@screens": ["src/screens"]
+    }
   },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["**/node_modules", "**/Pods"]
+  "include": ["src", "App.tsx"]
 }

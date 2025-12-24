@@ -31,11 +31,8 @@ export const Background: React.FC<BackgroundProps> = ({ children }) => {
   });
 
   return (
-    // @ts-ignore
     <View style={styles.container}>
-      {/* @ts-ignore */}
       <Animated.View
-        // @ts-ignore
         style={[
           styles.animatedBackground,
           {
@@ -43,7 +40,6 @@ export const Background: React.FC<BackgroundProps> = ({ children }) => {
           },
         ]}
       />
-      {/* @ts-ignore */}
       <View style={styles.content}>{children}</View>
     </View>
   );
