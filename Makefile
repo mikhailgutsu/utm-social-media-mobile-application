@@ -7,7 +7,7 @@ APK_DIR := $(ANDROID_DIR)/app/build/outputs/apk
 PATH_TO_RELEASE_APK := $(APK_DIR)/$(BUILD_TYPE)/app-$(BUILD_TYPE).apk
 
 .PHONY: clean-android
-clean: 
+clean-android: 
 	cd $(ANDROID_DIR) && rm -rf .gradle || true
 	cd $(ANDROID_DIR)/app && rm -rf build || true
 	cd $(ANDROID_DIR) && ./gradlew clean
