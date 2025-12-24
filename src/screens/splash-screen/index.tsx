@@ -45,7 +45,8 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ navigation }) => {
             paddingLeft: insets.left,
             paddingRight: insets.right,
           },
-        ]}>
+        ]}
+      >
         {/* @ts-ignore */}
         <View style={styles.content}>
           {/* @ts-ignore */}
@@ -55,7 +56,8 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ navigation }) => {
               {
                 transform: [{ scale: pulseAnimation }],
               },
-            ]}>
+            ]}
+          >
             {/* @ts-ignore */}
             <Image
               source={require('../../assets/png/utm-logo/logo.png')}

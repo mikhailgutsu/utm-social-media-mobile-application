@@ -19,11 +19,13 @@ export const InfoAboutApplication: React.FC<InfoAboutApplicationProps> = () => {
             paddingLeft: insets.left,
             paddingRight: insets.right,
           },
-        ]}>
+        ]}
+      >
         {/* @ts-ignore */}
         <ScrollView
           contentContainerStyle={styles.scrollContent}
-          showsVerticalScrollIndicator={false}>
+          showsVerticalScrollIndicator={false}
+        >
           {/* @ts-ignore */}
           <View style={styles.header}>
             {/* @ts-ignore */}

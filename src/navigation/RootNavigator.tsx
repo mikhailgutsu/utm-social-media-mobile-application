@@ -13,7 +13,8 @@ export const RootNavigator: React.FC = () => {
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
-        }}>
+        }}
+      >
         <Stack.Screen
           name="SplashScreen"
           component={SplashScreen}

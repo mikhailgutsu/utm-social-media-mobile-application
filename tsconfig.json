@@ -4,7 +4,7 @@
     "types": ["jest"],
     "jsx": "react-native",
     "skipLibCheck": true,
-    "noImplicitAny": false,
+    "noImplicitAny": false
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["**/node_modules", "**/Pods"]
