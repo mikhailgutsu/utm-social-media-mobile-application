@@ -9,7 +9,6 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ navigation }) => {
   const pulseAnimation = useRef(new Animated.Value(1)).current;
 
   useEffect(() => {
-    // Animație de pulsare pentru logo
     Animated.loop(
       Animated.sequence([
         Animated.timing(pulseAnimation, {
@@ -25,7 +24,6 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ navigation }) => {
       ]),
     ).start();
 
-    // Navighează după 1 secundă
     const timer = setTimeout(() => {
       navigation.replace('InfoAboutApplication');
     }, 1000);
